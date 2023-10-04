@@ -1,0 +1,20 @@
+[package]
+name = "riwer"
+version = "0.1.0"
+edition = "2021"
+description = "A toy wallpaper-setter written in rust with wgpu. DON'T USE IT AS A NORMAL TOOL"
+authors = ["TornaxO7 <tornax@pm.me>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytemuck = { version = "1.14.0", features = ["derive"] }
+env_logger = "0.10.0"
+thiserror = "1.0.49"
+wgpu = {git = "https://github.com/TornaxO7/wgpu", branch = "bump_raw_window_handle_to_6_0_0"}
+winit = "0.28.7"
+image = {version = "0.24", features = ["png", "jpeg"]}
+pollster = "0.3.0"
+raw-window-handle = { version = "0.6.0", features = ["std"] }
+x11 = { version = "2.21.0", features = ["xlib"] }
+clap = { version = "4.4.6", features = ["derive", "cargo"] }
